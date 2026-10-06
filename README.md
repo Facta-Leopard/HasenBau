@@ -27,7 +27,7 @@ google.com, pub-7572108671787552, DIRECT, f08c47fec0942fa0
 
 The project-level `app-ads.txt` is a matching convenience copy. It does not replace the domain-root file. Google derives the hostname from the App Store **Marketing URL**, so keep the URL above in the store listing. No changes to the shared root site were needed. A reachable file is not evidence of AdMob account verification; connect the released store listing and check its app-ads.txt status in AdMob.
 
-Before serving ads, integrate the applicable Google SDK/consent flow, review the actual privacy report and App Store data disclosures, and update the current-status text in `privacy.html` and `support.html`. Do not describe test-mode SDK requests as “no data collection.” This website itself serves no ads.
+The current app integration uses Google Mobile Ads13.11.0 and UMP3.1.0 with consent-gated requests, a320×50fixed banner and Google's official test ad unit in both Debug and Release. The owner's production App ID is configured, while the production banner ID is reserved for an explicit future switch. No live serving is enabled. Review the final archive's privacy report and App Store data disclosures before release; do not answer “Data Not Collected” solely because ads are in test mode. Update this policy when live serving or processing changes. This website itself serves no ads.
 
 Official references checked October 7, 2026:
 - [Google: set up app-ads.txt](https://support.google.com/admob/answer/9363762?hl=en)
